@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D0A6278-DB21-4633-A9AF-D0ADF3E6B6CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EczaneOtomastonSinemTokgöz</RootNamespace>
+    <AssemblyName>EczaneOtomastonSinemTokgöz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EczaneOtomasyonSinemTokgözDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EczaneOtomasyonSinemTokgözDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EczaneOtomasyonSinemTokgözDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EczaneOtomasyonSinemTokgözDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IlacBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlacBilgi.Designer.cs">
+      <DependentUpon>IlacBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciBilgiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciBilgiler.Designer.cs">
+      <DependentUpon>KullaniciBilgiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hosgeldiniz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hosgeldiniz.Designer.cs">
+      <DependentUpon>Hosgeldiniz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici.Designer.cs">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Hosgeldiniz.resx">
+      <DependentUpon>Hosgeldiniz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlacBilgi.resx">
+      <DependentUpon>IlacBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici.resx">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciBilgiler.resx">
+      <DependentUpon>KullaniciBilgiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="EczaneOtomasyonSinemTokgözDataSet.xsc">
+      <DependentUpon>EczaneOtomasyonSinemTokgözDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EczaneOtomasyonSinemTokgözDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EczaneOtomasyonSinemTokgözDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EczaneOtomasyonSinemTokgözDataSet.xss">
+      <DependentUpon>EczaneOtomasyonSinemTokgözDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EczaneOtomasyonSinemTokgözDataSet1.xsc">
+      <DependentUpon>EczaneOtomasyonSinemTokgözDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EczaneOtomasyonSinemTokgözDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EczaneOtomasyonSinemTokgözDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EczaneOtomasyonSinemTokgözDataSet1.xss">
+      <DependentUpon>EczaneOtomasyonSinemTokgözDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
